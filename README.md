@@ -21,7 +21,6 @@ SOLA implements strong data security principles:
 ## Installation
 - Requires Python 3.x and the `cryptography` library
 - Install dependencies: `pip install cryptography`
-- Clone the repository: `git clone https://github.com/yourusername/sola.git`
 - Ensure `secret.key` is generated on first run or provide your own securely
 
 ## Usage
@@ -33,6 +32,11 @@ SOLA implements strong data security principles:
 - Never commit your `secret.key` or any unencrypted sensitive data files to public repositories
 - Add `secret.key` and sensitive files to `.gitignore` to prevent accidental exposure
 - Keep backups of your encryption key securely outside of the repository
+
+ Note About Databases
+
+For security, demo releases, SOLA do NOT include real database files  (CatalogueItems.csv, etc.). 
+Please create your own data files or follow instructions in the README to initialize sample data.
 
 ## Contribution
 Contributions are welcome via pull requests. Please adhere to security best practices when handling sensitive data.
